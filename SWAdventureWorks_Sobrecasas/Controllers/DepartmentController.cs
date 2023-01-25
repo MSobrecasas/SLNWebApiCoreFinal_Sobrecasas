@@ -58,5 +58,34 @@ namespace SWAdventureWorks_Sobrecasas.Controllers
             return Ok();
         }
 
+        //PUT: api/department/{id}
+        [HttpPut("{id}")]
+        public ActionResult Put(int id, [FromBody] Department department)
+        {
+            if (id != department.DepartmentId)
+            {
+                return BadRequest();
+            }
+            context.Entry(department).State = EntityState.Modified;
+            context.SaveChanges();
+            return Ok();
+        }
+
+        //DELETE: api/department/{id}
+        [HttpDelete("{id}")]
+        public ActionResult<Department> Delete(int id)
+        {
+            Department department = (from d in context.Departments
+                                   where d.DepartmentId == id
+                                   select d).SingleOrDefault();
+            if (department == null)
+            {
+                return NotFound();
+            }
+            context.Departments.Remove(department);
+            context.SaveChanges();
+            return department;
+        }
+
     }
 }
