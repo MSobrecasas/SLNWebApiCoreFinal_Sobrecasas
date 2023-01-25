@@ -39,8 +39,7 @@ namespace SWProvincias_Sobrecasas.Controllers
             return Ok();
         }
 
-        //update
-        //PUT api/autor/{id}
+        //PUT: api/provincia/{id}
         [HttpPut("{id}")]
         public ActionResult Put(int id, [FromBody] Provincia provincia)
         {
@@ -53,7 +52,7 @@ namespace SWProvincias_Sobrecasas.Controllers
             return Ok();
         }
 
-        //DELETE api/autor/{id}
+        //DELETE: api/provincia/{id}
         [HttpDelete("{id}")]
         public ActionResult<Provincia> Delete(int id)
         {
