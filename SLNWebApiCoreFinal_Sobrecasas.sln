@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SWProvincias_Sobrecasas", "SWProvincias_Sobrecasas\SWProvincias_Sobrecasas.csproj", "{B75B3A19-6275-4039-9E3F-319CC44A17BB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SWAdventureWorks_Sobrecasas", "SWAdventureWorks_Sobrecasas\SWAdventureWorks_Sobrecasas.csproj", "{DAF9429F-6694-4CB9-A780-481167D3D356}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{B75B3A19-6275-4039-9E3F-319CC44A17BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B75B3A19-6275-4039-9E3F-319CC44A17BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B75B3A19-6275-4039-9E3F-319CC44A17BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAF9429F-6694-4CB9-A780-481167D3D356}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAF9429F-6694-4CB9-A780-481167D3D356}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAF9429F-6694-4CB9-A780-481167D3D356}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAF9429F-6694-4CB9-A780-481167D3D356}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
